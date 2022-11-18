@@ -18,7 +18,7 @@
   fhir:ImplementationGuide.title [ fhir:value "xxYour User Friendly Name for MyIG Here"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
   fhir:ImplementationGuide.experimental [ fhir:value "false"^^xsd:boolean];
-  fhir:ImplementationGuide.date [ fhir:value "2022-11-17T10:39:40+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-11-18T06:31:27+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "xxxYour Work Group"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -323,6 +323,114 @@
          fhir:Extension.valueString [ fhir:value "true" ]
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ];
+     fhir:ImplementationGuide.definition.resource [
+       fhir:index 0;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://xxsomewhere.org/fhir/myig/Observation/HIVTestResultIndonesiaExample>;
+         fhir:Reference.reference [ fhir:value "Observation/HIVTestResultIndonesiaExample" ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://xxsomewhere.org/fhir/myig/CodeSystem/cs-hiv-obs-codes>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/cs-hiv-obs-codes" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "HIV Case Report Observation codes" ]
+     ], [
+       fhir:index 2;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://xxsomewhere.org/fhir/myig/StructureDefinition/hiv-test-result-indonesia>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hiv-test-result-indonesia" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "HIVTestReObservationsult" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Observation" ]
+     ], [
+       fhir:index 3;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://xxsomewhere.org/fhir/myig/StructureDefinition/hiv-patient-indonesia>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hiv-patient-indonesia" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "HIVPPatient" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Patient" ]
+     ], [
+       fhir:index 4;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://xxsomewhere.org/fhir/myig/Bundle/IndonesiaBundleExample>;
+         fhir:Reference.reference [ fhir:value "Bundle/IndonesiaBundleExample" ]
+       ]
+     ], [
+       fhir:index 5;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://xxsomewhere.org/fhir/myig/StructureDefinition/hiv-encounter-indonesia>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hiv-encounter-indonesia" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "HIVEncounter" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "HIV Encounter" ]
+     ], [
+       fhir:index 6;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Encounter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://xxsomewhere.org/fhir/myig/Encounter/HIVEncounterIndonesiaExample>;
+         fhir:Reference.reference [ fhir:value "Encounter/HIVEncounterIndonesiaExample" ]
+       ]
+     ], [
+       fhir:index 7;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Patient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://xxsomewhere.org/fhir/myig/Patient/HIVPatientIndonesiaExample>;
+         fhir:Reference.reference [ fhir:value "Patient/HIVPatientIndonesiaExample" ]
+       ]
+     ], [
+       fhir:index 8;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://xxsomewhere.org/fhir/myig/CodeSystem/cs-case-report-sections>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/cs-case-report-sections" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "HIV Case Report Sections codesystem" ]
      ];
      fhir:ImplementationGuide.definition.page [
        fhir:Element.extension [

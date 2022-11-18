@@ -1,0 +1,21 @@
+{
+  "resourceType": "Patient",
+  "id": "HIVPatientIndonesiaExample",
+  "meta": {
+    "profile": [
+      "http://example.com/fhir/example/StructureDefinition/hiv-patient-indonesia"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>John </b> male, DoB Unknown</p><hr/></div>"
+  },
+  "name": [
+    {
+      "given": [
+        "John"
+      ]
+    }
+  ],
+  "gender": "male"
+}

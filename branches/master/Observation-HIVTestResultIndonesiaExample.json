@@ -1,0 +1,40 @@
+{
+  "resourceType": "Observation",
+  "id": "HIVTestResultIndonesiaExample",
+  "meta": {
+    "profile": [
+      "http://example.com/fhir/example/StructureDefinition/hiv-test-result-indonesia"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"HIVTestResultIndonesiaExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation \"HIVTestResultIndonesiaExample\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hiv-test-result-indonesia.html\">HIVTestReObservationsult</a></p></div><p><b>status</b>: final</p><p><b>code</b>: CD4 result <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-cs-case-report-sections.html\">HIV Case Report Sections codesystem</a>#CD4)</span></p><p><b>subject</b>: <a href=\"Patient-HIVPatientIndonesiaExample.html\">Patient/HIVPatientIndonesiaExample</a> \"\"</p><h3>Components</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>CD4 result <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#113056008)</span></td><td>45</td></tr></table></div>"
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://example.com/fhir/example/CodeSystem/cs-case-report-sections",
+        "code": "CD4",
+        "display": "CD4 result"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/HIVPatientIndonesiaExample"
+  },
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "113056008",
+            "display": "CD4 result"
+          }
+        ]
+      },
+      "valueInteger": 45
+    }
+  ]
+}
