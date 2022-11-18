@@ -13,7 +13,7 @@ Title: "HIVEncounter Example"
 Description: ""
 * period.start = "2016-05-12" // Clinical visit date
 * class = #SS
-* status = #final
+* status = #finished
 
 Instance: HIVTestResultIndonesiaExample
 InstanceOf: HIVTestResultIndonesia
