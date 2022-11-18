@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Encounter xmlns="http://hl7.org/fhir">
+  <id value="HIVEncounterIndonesiaExample"/>
+  <meta>
+    <profile value="http://example.com/fhir/example/StructureDefinition/hiv-encounter-indonesia"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Encounter</b><a name="HIVEncounterIndonesiaExample"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Encounter "HIVEncounterIndonesiaExample" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-hiv-encounter-indonesia.html">HIVEncounter</a></p></div><p><b>status</b>: finished</p><p><b>class</b>: SS (Details: [not stated] code SS = 'SS', stated as 'null')</p><p><b>period</b>: 2016-05-12 --&gt; (ongoing)</p></div>
+  </text>
+  <status value="finished"/>
+  <class>
+    <code value="SS"/>
+  </class>
+  <period>
+    <start value="2016-05-12"/>
+  </period>
+</Encounter>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="IndonesiaBundleExample"/>
+  <type value="transaction"/>
+  <entry>
+    <fullUrl value="Patient/HIVPatientIndonesiaExample"/>
+    <resource>
+      <Patient>
+        <id value="HIVPatientIndonesiaExample"/>
+        <meta>
+          <profile value="http://example.com/fhir/example/StructureDefinition/hiv-patient-indonesia"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Patient</b><a name="HIVPatientIndonesiaExample"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Patient "HIVPatientIndonesiaExample" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-hiv-patient-indonesia.html">HIVPPatient</a></p></div><p><b>name</b>: John </p><p><b>gender</b>: male</p></div>
+        </text>
+        <name>
+          <given value="John"/>
+        </name>
+        <gender value="male"/>
+      </Patient>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="Patient/HIVPatientIndonesiaExample"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="Encounter/HIVEncounterIndonesiaExample"/>
+    <resource>
+      <Patient>
+        <id value="HIVPatientIndonesiaExample"/>
+        <meta>
+          <profile value="http://example.com/fhir/example/StructureDefinition/hiv-patient-indonesia"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Patient</b><a name="HIVPatientIndonesiaExample"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Patient "HIVPatientIndonesiaExample" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-hiv-patient-indonesia.html">HIVPPatient</a></p></div><p><b>name</b>: John </p><p><b>gender</b>: male</p></div>
+        </text>
+        <name>
+          <given value="John"/>
+        </name>
+        <gender value="male"/>
+      </Patient>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="Encounter/HIVEncounterIndonesiaExample"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="Observation/HIVTestResultIndonesiaExample"/>
+    <resource>
+      <Patient>
+        <id value="HIVPatientIndonesiaExample"/>
+        <meta>
+          <profile value="http://example.com/fhir/example/StructureDefinition/hiv-patient-indonesia"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Patient</b><a name="HIVPatientIndonesiaExample"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Patient "HIVPatientIndonesiaExample" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-hiv-patient-indonesia.html">HIVPPatient</a></p></div><p><b>name</b>: John </p><p><b>gender</b>: male</p></div>
+        </text>
+        <name>
+          <given value="John"/>
+        </name>
+        <gender value="male"/>
+      </Patient>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="Observation/HIVTestResultIndonesiaExample"/>
+    </request>
+  </entry>
+</Bundle>

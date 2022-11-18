@@ -1,5 +1,40 @@
 [
   {
+    "id": "cs-case-report-sections",
+    "type": "CodeSystem",
+    "url": "http://example.com/fhir/example/CodeSystem/cs-case-report-sections",
+    "version": "0.1.0-test",
+    "name": "CSCaseReportSections"
+  },
+  {
+    "id": "cs-hiv-obs-codes",
+    "type": "CodeSystem",
+    "url": "http://example.com/fhir/example/CodeSystem/cs-hiv-obs-codes",
+    "version": "0.1.0-test",
+    "name": "CSHIVObsCodes"
+  },
+  {
+    "id": "hiv-encounter-indonesia",
+    "type": "StructureDefinition",
+    "url": "http://example.com/fhir/example/StructureDefinition/hiv-encounter-indonesia",
+    "version": "0.1.0-test",
+    "name": "HIVEncounterIndonesia"
+  },
+  {
+    "id": "hiv-patient-indonesia",
+    "type": "StructureDefinition",
+    "url": "http://example.com/fhir/example/StructureDefinition/hiv-patient-indonesia",
+    "version": "0.1.0-test",
+    "name": "HIVPatientIndonesia"
+  },
+  {
+    "id": "hiv-test-result-indonesia",
+    "type": "StructureDefinition",
+    "url": "http://example.com/fhir/example/StructureDefinition/hiv-test-result-indonesia",
+    "version": "0.1.0-test",
+    "name": "HIVTestResultIndonesia"
+  },
+  {
     "id": "xxexample.fhir.uv.myig",
     "type": "ImplementationGuide",
     "url": "http://xxsomewhere.org/fhir/myig/ImplementationGuide/xxexample.fhir.uv.myig",

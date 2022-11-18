@@ -1,0 +1,36 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://xxsomewhere.org/fhir/myig/Encounter/HIVEncounterIndonesiaExample> a fhir:Encounter;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "HIVEncounterIndonesiaExample"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://example.com/fhir/example/StructureDefinition/hiv-encounter-indonesia";
+       fhir:index 0;
+       fhir:link <http://example.com/fhir/example/StructureDefinition/hiv-encounter-indonesia>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Encounter</b><a name=\"HIVEncounterIndonesiaExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Encounter \"HIVEncounterIndonesiaExample\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hiv-encounter-indonesia.html\">HIVEncounter</a></p></div><p><b>status</b>: finished</p><p><b>class</b>: SS (Details: [not stated] code SS = 'SS', stated as 'null')</p><p><b>period</b>: 2016-05-12 --&gt; (ongoing)</p></div>"
+  ];
+  fhir:Encounter.status [ fhir:value "finished"];
+  fhir:Encounter.class [
+     fhir:Coding.code [ fhir:value "SS" ]
+  ];
+  fhir:Encounter.period [
+     fhir:Period.start [ fhir:value "2016-05-12"^^xsd:date ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://xxsomewhere.org/fhir/myig/Encounter/HIVEncounterIndonesiaExample.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

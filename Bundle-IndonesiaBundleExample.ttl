@@ -1,0 +1,110 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://xxsomewhere.org/fhir/myig/Bundle/IndonesiaBundleExample> a fhir:Bundle;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "IndonesiaBundleExample"];
+  fhir:Bundle.type [ fhir:value "transaction"];
+  fhir:Bundle.entry [
+     fhir:index 0;
+     fhir:Bundle.entry.fullUrl [ fhir:value "Patient/HIVPatientIndonesiaExample" ];
+     fhir:Bundle.entry.resource <Patient/HIVPatientIndonesiaExample>;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "PUT" ];
+       fhir:Bundle.entry.request.url [ fhir:value "Patient/HIVPatientIndonesiaExample" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Bundle.entry.fullUrl [ fhir:value "Encounter/HIVEncounterIndonesiaExample" ];
+     fhir:Bundle.entry.resource <Encounter/HIVEncounterIndonesiaExample>;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "PUT" ];
+       fhir:Bundle.entry.request.url [ fhir:value "Encounter/HIVEncounterIndonesiaExample" ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:Bundle.entry.fullUrl [ fhir:value "Observation/HIVTestResultIndonesiaExample" ];
+     fhir:Bundle.entry.resource <Observation/HIVTestResultIndonesiaExample>;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "PUT" ];
+       fhir:Bundle.entry.request.url [ fhir:value "Observation/HIVTestResultIndonesiaExample" ]
+     ]
+  ] .
+
+<Patient/HIVPatientIndonesiaExample> a fhir:Patient;
+  fhir:Resource.id [ fhir:value "HIVPatientIndonesiaExample"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://example.com/fhir/example/StructureDefinition/hiv-patient-indonesia";
+       fhir:index 0;
+       fhir:link <http://example.com/fhir/example/StructureDefinition/hiv-patient-indonesia>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Patient</b><a name=\"HIVPatientIndonesiaExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Patient \"HIVPatientIndonesiaExample\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hiv-patient-indonesia.html\">HIVPPatient</a></p></div><p><b>name</b>: John </p><p><b>gender</b>: male</p></div>"
+  ];
+  fhir:Patient.name [
+     fhir:index 0;
+     fhir:HumanName.given [
+       fhir:value "John";
+       fhir:index 0
+     ]
+  ];
+  fhir:Patient.gender [ fhir:value "male"] .
+
+<Encounter/HIVEncounterIndonesiaExample> a fhir:Patient;
+  fhir:Resource.id [ fhir:value "HIVPatientIndonesiaExample"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://example.com/fhir/example/StructureDefinition/hiv-patient-indonesia";
+       fhir:index 0;
+       fhir:link <http://example.com/fhir/example/StructureDefinition/hiv-patient-indonesia>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Patient</b><a name=\"HIVPatientIndonesiaExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Patient \"HIVPatientIndonesiaExample\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hiv-patient-indonesia.html\">HIVPPatient</a></p></div><p><b>name</b>: John </p><p><b>gender</b>: male</p></div>"
+  ];
+  fhir:Patient.name [
+     fhir:index 0;
+     fhir:HumanName.given [
+       fhir:value "John";
+       fhir:index 0
+     ]
+  ];
+  fhir:Patient.gender [ fhir:value "male"] .
+
+<Observation/HIVTestResultIndonesiaExample> a fhir:Patient;
+  fhir:Resource.id [ fhir:value "HIVPatientIndonesiaExample"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://example.com/fhir/example/StructureDefinition/hiv-patient-indonesia";
+       fhir:index 0;
+       fhir:link <http://example.com/fhir/example/StructureDefinition/hiv-patient-indonesia>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Patient</b><a name=\"HIVPatientIndonesiaExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Patient \"HIVPatientIndonesiaExample\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hiv-patient-indonesia.html\">HIVPPatient</a></p></div><p><b>name</b>: John </p><p><b>gender</b>: male</p></div>"
+  ];
+  fhir:Patient.name [
+     fhir:index 0;
+     fhir:HumanName.given [
+       fhir:value "John";
+       fhir:index 0
+     ]
+  ];
+  fhir:Patient.gender [ fhir:value "male"] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://xxsomewhere.org/fhir/myig/Bundle/IndonesiaBundleExample.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

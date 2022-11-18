@@ -50,7 +50,7 @@
 	  <script src="assets/js/prism.js"></script>
 
     <style type="text/css">h2{--heading-prefix:"3"}
-    h3,h4,h5,h6{--heading-prefix:"3"}</style>
+    h3,h4,h5,h6{--heading-prefix:"3.0"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -166,12 +166,121 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
      xmlns:f="http://hl7.org/fhir"
      class="markdown-toc">
    <p>Contents:</p>
-   <ul/>
+   <ul>
+      <li>
+         <a href="#1">Structures: Resource Profiles</a>
+      </li>
+      <li>
+         <a href="#2">Terminology: Code Systems</a>
+      </li>
+      <li>
+         <a href="#3">Other</a>
+      </li>
+   </ul>
 </div>
 <div xmlns:html="http://www.w3.org/1999/xhtml"
      xmlns="http://www.w3.org/1999/xhtml"
      xmlns:f="http://hl7.org/fhir">
    <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
+   <a name="1"> </a>
+   <h3>Structures: Resource Profiles </h3>
+   <p>
+    <p>These define constraints on FHIR resources for systems conforming to this implementation guide</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-hiv-test-result-indonesia.html"
+                     title="StructureDefinition/hiv-test-result-indonesia">HIVTestReObservationsult</a>
+               </td>
+               <td>
+<p>Observation</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-hiv-patient-indonesia.html"
+                     title="StructureDefinition/hiv-patient-indonesia">HIVPPatient</a>
+               </td>
+               <td>
+<p>Patient</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-hiv-encounter-indonesia.html"
+                     title="StructureDefinition/hiv-encounter-indonesia">HIVEncounter</a>
+               </td>
+               <td>
+<p>HIV Encounter</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="2"> </a>
+   <h3>Terminology: Code Systems </h3>
+   <p>
+    <p>These define new code systems used by systems conforming to this implementation guide</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-cs-hiv-obs-codes.html"
+                     title="CodeSystem/cs-hiv-obs-codes">HIV Case Report Observation codes</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-cs-case-report-sections.html"
+                     title="CodeSystem/cs-case-report-sections">HIV Case Report Sections codesystem</a>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="3"> </a>
+   <h3>Other </h3>
+   <p>
+    <p>These are resources that are used within this implementation guide that do not fit into one of the other categories</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-HIVTestResultIndonesiaExample.html"
+                     title="Observation/HIVTestResultIndonesiaExample">Observation/HIVTestResultIndonesiaExample</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Bundle-IndonesiaBundleExample.html"
+                     title="Bundle/IndonesiaBundleExample">Bundle/IndonesiaBundleExample</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Encounter-HIVEncounterIndonesiaExample.html"
+                     title="Encounter/HIVEncounterIndonesiaExample">Encounter/HIVEncounterIndonesiaExample</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Patient-HIVPatientIndonesiaExample.html"
+                     title="Patient/HIVPatientIndonesiaExample">Patient/HIVPatientIndonesiaExample</a>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
 </div>
 
 </div>
@@ -197,7 +306,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
            
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2019+ <a style="color: #81BEF7" href="http://xxhl7.org/Special/committees/[something]">xxxYour Work Group</a>.  Package xxexample.fhir.uv.myig#0.1.0-test based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Nov 17, 2022 10:39+0000">2022-11-17</span>
+          IG &#169; 2019+ <a style="color: #81BEF7" href="http://xxhl7.org/Special/committees/[something]">xxxYour Work Group</a>.  Package xxexample.fhir.uv.myig#0.1.0-test based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Nov 18, 2022 06:31+0000">2022-11-18</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

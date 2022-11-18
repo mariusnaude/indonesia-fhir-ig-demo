@@ -1,16 +1,64 @@
 ﻿XXYourComputableMyIGNameHere : Validation Results
 =========================================
 
-err = 1, warn = 4, info = 0
+err = 14, warn = 19, info = 2
 IG Publisher Version: 1.2.15
-Generated Thu Nov 17 10:39:47 UTC 2022. FHIR version 4.0.1 for xxexample.fhir.uv.myig#0.1.0-test (canonical = http://xxsomewhere.org/fhir/myig)
- Build Errors : 0 / 4 / 0
- /github/workspace/input/myig : 1 / 0 / 1
+Generated Fri Nov 18 06:31:48 UTC 2022. FHIR version 4.0.1 for xxexample.fhir.uv.myig#0.1.0-test (canonical = http://xxsomewhere.org/fhir/myig)
+ Build Errors : 4 / 10 / 0
+ /github/workspace/fsh-generated/resources/Bundle-IndonesiaBundleExample : 0 / 0 / 7
+ /github/workspace/fsh-generated/resources/CodeSystem-cs-case-report-sections : 2 / 3 / 2
+ /github/workspace/fsh-generated/resources/CodeSystem-cs-hiv-obs-codes : 2 / 3 / 2
+ /github/workspace/fsh-generated/resources/Encounter-HIVEncounterIndonesiaExample : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/Observation-HIVTestResultIndonesiaExample : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/Patient-HIVPatientIndonesiaExample : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-hiv-encounter-indonesia : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-hiv-patient-indonesia : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-hiv-test-result-indonesia : 2 / 0 / 1
+ /github/workspace/input/myig : 0 / 0 / 1
 </table>
 == n/a ==
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Observation/HIVTestResultIndonesiaExample.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/HIVTestResultIndonesiaExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/cs-hiv-obs-codes.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Bundle/IndonesiaBundleExample.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/IndonesiaBundleExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Encounter/HIVEncounterIndonesiaExample.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Encounter/HIVEncounterIndonesiaExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Patient/HIVPatientIndonesiaExample.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/HIVPatientIndonesiaExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/cs-case-report-sections.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated/resources/Bundle-IndonesiaBundleExample.json ==
+== fsh-generated/resources/CodeSystem-cs-case-report-sections.json ==
+ERROR: CodeSystem.where(url = 'http://example.com/fhir/example/CodeSystem/cs-case-report-sections'): Conformance resource /github/workspace/fsh-generated/resources/CodeSystem-cs-case-report-sections.json - the canonical URL (http://xxsomewhere.org/fhir/myig/CodeSystem/cs-case-report-sections) does not match the URL (http://example.com/fhir/example/CodeSystem/cs-case-report-sections)
+INFORMATION: CodeSystem/cs-case-report-sections: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/cs-case-report-sections: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+WARNING: CodeSystem/cs-case-report-sections: CodeSystem: The ShareableCodeSystem profile says that the description element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+WARNING: CodeSystem/cs-case-report-sections: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+ERROR: /github/workspace/fsh-generated/resources/CodeSystem-cs-case-report-sections: URL Mismatch http://xxsomewhere.org/fhir/myig/CodeSystem/cs-case-report-sections vs http://example.com/fhir/example/CodeSystem/cs-case-report-sections
+== fsh-generated/resources/CodeSystem-cs-hiv-obs-codes.json ==
+ERROR: CodeSystem.where(url = 'http://example.com/fhir/example/CodeSystem/cs-hiv-obs-codes'): Conformance resource /github/workspace/fsh-generated/resources/CodeSystem-cs-hiv-obs-codes.json - the canonical URL (http://xxsomewhere.org/fhir/myig/CodeSystem/cs-hiv-obs-codes) does not match the URL (http://example.com/fhir/example/CodeSystem/cs-hiv-obs-codes)
+INFORMATION: CodeSystem/cs-hiv-obs-codes: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/cs-hiv-obs-codes: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+WARNING: CodeSystem/cs-hiv-obs-codes: CodeSystem: The ShareableCodeSystem profile says that the description element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+WARNING: CodeSystem/cs-hiv-obs-codes: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+ERROR: /github/workspace/fsh-generated/resources/CodeSystem-cs-hiv-obs-codes: URL Mismatch http://xxsomewhere.org/fhir/myig/CodeSystem/cs-hiv-obs-codes vs http://example.com/fhir/example/CodeSystem/cs-hiv-obs-codes
+== fsh-generated/resources/Encounter-HIVEncounterIndonesiaExample.json ==
+WARNING: Encounter/HIVEncounterIndonesiaExample: Encounter.class: A code with no system has no defined meaning. A system should be provided
+== fsh-generated/resources/Observation-HIVTestResultIndonesiaExample.json ==
+WARNING: Observation/HIVTestResultIndonesiaExample: Observation.code.coding[0]: Display Name for http://example.com/fhir/example/CodeSystem/cs-case-report-sections#CD4 should be one of 0 choices from '', not 'CD4 result' for 'http://example.com/fhir/example/CodeSystem/cs-case-report-sections#CD4'
+WARNING: Observation/HIVTestResultIndonesiaExample: Observation.component[0].code.coding[0]: The display "CD4 result" is not a valid display for the code {http://snomed.info/sct}113056008 - should be one of ['Helper suppressor typing T-cell subsets measurement', 'T cells, T4/T8 ratio', 'Helper suppressor ratio determination', 'Cluster of differentiation 4/Cluster of differentiation 8 ratio', 'Helper suppressor ratio determination (procedure)'] (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#113056008'
+== fsh-generated/resources/Patient-HIVPatientIndonesiaExample.json ==
+== fsh-generated/resources/StructureDefinition-hiv-encounter-indonesia.json ==
+ERROR: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/hiv-encounter-indonesia'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-hiv-encounter-indonesia.json - the canonical URL (http://xxsomewhere.org/fhir/myig/StructureDefinition/hiv-encounter-indonesia) does not match the URL (http://example.com/fhir/example/StructureDefinition/hiv-encounter-indonesia)
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-hiv-encounter-indonesia: URL Mismatch http://xxsomewhere.org/fhir/myig/StructureDefinition/hiv-encounter-indonesia vs http://example.com/fhir/example/StructureDefinition/hiv-encounter-indonesia
+== fsh-generated/resources/StructureDefinition-hiv-patient-indonesia.json ==
+ERROR: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/hiv-patient-indonesia'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-hiv-patient-indonesia.json - the canonical URL (http://xxsomewhere.org/fhir/myig/StructureDefinition/hiv-patient-indonesia) does not match the URL (http://example.com/fhir/example/StructureDefinition/hiv-patient-indonesia)
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-hiv-patient-indonesia: URL Mismatch http://xxsomewhere.org/fhir/myig/StructureDefinition/hiv-patient-indonesia vs http://example.com/fhir/example/StructureDefinition/hiv-patient-indonesia
+== fsh-generated/resources/StructureDefinition-hiv-test-result-indonesia.json ==
+ERROR: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/hiv-test-result-indonesia'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-hiv-test-result-indonesia.json - the canonical URL (http://xxsomewhere.org/fhir/myig/StructureDefinition/hiv-test-result-indonesia) does not match the URL (http://example.com/fhir/example/StructureDefinition/hiv-test-result-indonesia)
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-hiv-test-result-indonesia: URL Mismatch http://xxsomewhere.org/fhir/myig/StructureDefinition/hiv-test-result-indonesia vs http://example.com/fhir/example/StructureDefinition/hiv-test-result-indonesia
 == input/myig.xml ==
-ERROR: ImplementationGuide/xxexample.fhir.uv.myig: ImplementationGuide.definition: ImplementationGuide.definition.resource: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ImplementationGuide|4.0.1)

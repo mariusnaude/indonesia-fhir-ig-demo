@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="HIVPatientIndonesiaExample"/>
+  <meta>
+    <profile value="http://example.com/fhir/example/StructureDefinition/hiv-patient-indonesia"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;"><b>John </b> male, DoB Unknown</p><hr/></div>
+  </text>
+  <name>
+    <given value="John"/>
+  </name>
+  <gender value="male"/>
+</Patient>

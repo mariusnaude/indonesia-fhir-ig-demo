@@ -1,0 +1,56 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://xxsomewhere.org/fhir/myig/Observation/HIVTestResultIndonesiaExample> a fhir:Observation;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "HIVTestResultIndonesiaExample"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://example.com/fhir/example/StructureDefinition/hiv-test-result-indonesia";
+       fhir:index 0;
+       fhir:link <http://example.com/fhir/example/StructureDefinition/hiv-test-result-indonesia>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"HIVTestResultIndonesiaExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation \"HIVTestResultIndonesiaExample\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hiv-test-result-indonesia.html\">HIVTestReObservationsult</a></p></div><p><b>status</b>: final</p><p><b>code</b>: CD4 result <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-cs-case-report-sections.html\">HIV Case Report Sections codesystem</a>#CD4)</span></p><p><b>subject</b>: <a href=\"Patient-HIVPatientIndonesiaExample.html\">Patient/HIVPatientIndonesiaExample</a> \"\"</p><h3>Components</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>CD4 result <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#113056008)</span></td><td>45</td></tr></table></div>"
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://example.com/fhir/example/CodeSystem/cs-case-report-sections" ];
+       fhir:Coding.code [ fhir:value "CD4" ];
+       fhir:Coding.display [ fhir:value "CD4 result" ]
+     ]
+  ];
+  fhir:Observation.subject [
+     fhir:link <http://xxsomewhere.org/fhir/myig/Patient/HIVPatientIndonesiaExample>;
+     fhir:Reference.reference [ fhir:value "Patient/HIVPatientIndonesiaExample" ]
+  ];
+  fhir:Observation.component [
+     fhir:index 0;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a sct:113056008;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:Coding.code [ fhir:value "113056008" ];
+         fhir:Coding.display [ fhir:value "CD4 result" ]
+       ]
+     ];
+     fhir:Observation.component.valueInteger [ fhir:value "45"^^xsd:integer ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://xxsomewhere.org/fhir/myig/Observation/HIVTestResultIndonesiaExample.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
