@@ -10,11 +10,11 @@ Description: ""
 * entry[=].request.url = "Patient/HIVPatientIndonesiaExample"
 
 * entry[+].fullUrl  = "Encounter/HIVEncounterIndonesiaExample"
-* entry[=].resource = HIVPatientIndonesiaExample
+* entry[=].resource = HIVEncounterIndonesiaExample
 * entry[=].request.method = #PUT
 * entry[=].request.url = "Encounter/HIVEncounterIndonesiaExample"
 
 * entry[+].fullUrl  = "Observation/HIVTestResultIndonesiaExample"
-* entry[=].resource = HIVPatientIndonesiaExample
+* entry[=].resource = HIVTestResultIndonesiaExample
 * entry[=].request.method = #PUT
 * entry[=].request.url = "Observation/HIVTestResultIndonesiaExample"
